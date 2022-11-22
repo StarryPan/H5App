@@ -1,0 +1,220 @@
+.video-view{
+  background: #FFF;
+  background-image: url(../../images/vedio/bg.png);
+  background-repeat:  no-repeat;
+  background-size: contain;
+  background-position: 0px -40px;
+  padding-bottom: 1rem;
+  .top-bg{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10rem;
+  }
+  .content{
+    background: url('../../images/vedio/top-bg.png') no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    position: relative;
+    z-index: 9;
+    padding: 1.5rem .75rem 0;
+    // height: 7rem;
+    border-radius: .35rem;
+    overflow: hidden;
+    // margin-bottom: 1rem;
+    .view{
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+      &::after{
+        position: absolute;
+        content: '';
+        top: 0rem;
+        right: 0rem;
+        bottom: 0rem;
+        left: 0rem;
+        background: linear-gradient(270deg, #fd307f, #fe8d6f);
+      }
+    }
+    .inner{
+      height: 9rem;
+      width: 9rem;
+      margin: .5rem 0 0 .5rem;
+      border-radius: 50%;
+      position: relative;
+      background-color: #FFF;
+      z-index: 9;
+    }
+    .icon {
+      width: 1rem;
+      transform: translate(0px, .25rem);
+      &.left{
+        padding-left: .25rem;
+        padding-right: .5rem;
+      }
+      &.right{
+        padding-left: .5rem;
+      }
+      &.fixed{
+        position: absolute;
+        right: .5rem;
+        top: .25rem;
+      }
+    }
+    .fixedText{
+      font-size: .65rem;
+      color: #FA233B;
+      position: absolute;
+      right: .5rem;
+      top: .5rem;
+    }
+  }
+  .level-proess{
+    height: 0.5rem;
+    background: linear-gradient(180deg, #EFEFEF, #E8E8E8);
+    box-shadow: 0px 1px 3px 0px #F8EEE1, 0px -2px 3px 0px rgba(255, 255, 255, 0.8);
+    border-radius: 0.5rem;
+  }
+  .tit{
+    font-size: .7rem;
+    margin-bottom: .75rem;
+    span{
+      font-size: .95rem;
+      color: #FA233B;
+      font-weight: bold;
+    }
+    .pr{
+      transform: translate(0, 0.1rem);
+      display: inline-block;
+      &.line {
+        padding-bottom: .1rem;
+        border-bottom: 1px solid #FA233B;
+      }
+    }
+    .unit{
+      color: #212121;
+      font-weight: 600;
+      font-size: .7rem;
+      display: inline-block;
+      margin-left: .2rem;
+
+    }
+  }
+  .midt{
+    font-size: .65rem;
+    color:#888;
+  }
+  .bar-word{
+    margin-top: .5rem;
+    font-size: .55rem;
+    color: #888;
+  }
+  h3{
+    margin: 0 0 1rem;
+    font-size: .95rem;
+    img{
+      height: 1rem;
+      display: inline-block;
+      transform: translate(-0.5rem, .2rem);
+      &.rig{
+        transform: translate(0.25rem, .2rem);
+      }
+    }
+  }
+  ul{
+    padding-left: .75rem;
+  }
+  li{
+    list-style: decimal;
+    line-height: 1.1rem;
+    color: #666;
+    margin-bottom: .75rem;
+    span{
+      color: #FA233B;
+    }
+    img{
+      width: .8rem;
+      vertical-align: middle;
+      transform: translate(0px, -1px);
+    }
+  }
+  .content-new{
+    background: linear-gradient(180deg, #F8F4FF 0%, #FDFCFF 100%);
+    padding: 0 1rem 1rem;
+    margin: 0 .75rem;
+    border-radius: .3rem;
+    overflow: hidden;
+    font-size: .65rem;
+    .tit{
+      background: linear-gradient(270deg, #D75BFF 0%, #6D2FFF 100%);
+      border-radius: 0px 0px 15px 15px;
+      color: #FFF;
+      display: inline-block;
+      padding: 3px 15px;
+      font-size: .75rem;
+    }
+    li {
+      color: #323133;
+      p {
+        color: #7D36FF;
+      }
+    }
+    li div{
+      background-color: #A48AFF;
+      color: #FFF;
+      padding: 0.6rem 1rem;
+      border-radius: 0.4rem;
+      justify-content: space-between;
+      display: flex;
+      font-family: monospace;
+    }
+    h4, p{
+      margin: 0 .4rem;
+    }
+    h4 {
+      margin-top: .5rem;
+    }
+  }
+  .tips{
+    color: #FF2D55;
+    font-size: .55rem;
+    text-align: center;
+    margin: .5rem 0 1rem;
+    letter-spacing: 5px;
+  }
+  .time{
+    color: #323133;
+    font-size: .7rem;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    .l, .r {
+      width: 3rem;
+      transform: translate(-2px, -2px);
+      margin: 0 8px;
+
+    }
+    .r{
+      transform: rotate(180deg) translate(0px, 2px);
+    }
+    span {
+      display: inline-block;
+      padding: 5px 15px;
+      border: 0.5px solid #707070;
+      border-radius: 1rem;
+      color: #7D36FF;
+    }
+  }
+  .five, .ten, .zero{
+    color: #8840F6;
+    font-size: .55rem;
+    position: relative;
+    z-index: 9;
+  }
+  .ten, .zero{
+    transform: translate(0px, -10px);
+    display: inline-block;
+    margin: 0 5px;
+  }
+}

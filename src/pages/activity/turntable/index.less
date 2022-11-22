@@ -1,0 +1,316 @@
+.turnable-view{
+  background: linear-gradient(0deg, #9929EA 0%, #5808FB 100%);
+  padding-bottom: 2rem;
+  .top{
+    height: 15.2rem;
+    background: url(../../../images/activity/turnable/top.png) no-repeat;
+    background-size: cover;
+  }
+  .main{
+    background-color: #AF6FFE;
+    margin: -4rem .25rem .75rem;
+    border-radius: 1.6rem;
+    box-shadow: 0 0 8px #ce4ff7;
+    padding: 1rem;
+    position: relative;
+  }
+  .inner{
+    min-height: 10.4rem;
+    background-color: #91019F;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 10px #000 inset;
+    position: relative;
+  }
+  .gift{
+    width: 3.65rem;
+    height: 2.9rem;
+    position: absolute;
+    background-color: #003CE7;
+    border-radius: .6rem;
+    text-align: center;
+    padding-top: .2rem;
+    font-size: 0;
+    img{
+      height: 2rem;
+    }
+    p{
+      margin: 0;
+      color: #FFF;
+      font-size: .5rem;
+      margin-top: 1px;
+    }
+  }
+  .type1, .type2, .type3, .type4{
+    top: .5rem;
+  }
+  .type1, .type9, .type10 {
+    left: .5rem;
+  }
+  .type4, .type5, .type6 {
+    left: 12.1rem;
+  }
+  .type2, .type8 {
+    left: 4.35rem;
+  }
+  .type3, .type7 {
+    left: 8.2rem;
+  }
+  .type10, .type5{
+    top: 3.75rem;
+  }
+  .type6, .type7, .type8, .type9{
+    top: 7rem;
+  }
+  .type1, .type3, .type8 {
+    background-color: #003CE7;
+  }
+  .type2, .type7, .type7 {
+    background-color: #FFAE00;
+  }
+  .type4{
+    background-color: #ED3992;
+  }
+  .type6{
+    background-color: #5A00FF;
+  }
+  .type9{
+    background-color: #226EA6;
+  }
+  .type10{
+    background-color: #4372F9;
+  }
+  .btn{
+    position: absolute;
+    top: 3.8rem;
+    left: 4.8rem;
+    height: 1rem;
+    width: 6.65rem;
+    background: url(../../../images/activity/turnable/btn.png) no-repeat;
+    background-size: cover;
+    font-size: .6rem;
+    font-weight: bold;
+    color: #FFF;
+    padding-top: 1.85rem;
+    text-align: center;
+    transition: transform .1s ease-in-out;
+    &:active{
+      transform: scale(.95);
+    }
+  }
+  .bottom{
+    text-align: center;
+    .tit{
+      width: 5.5rem;
+      color: #FFF;
+      display: inline-block;
+      font-weight: bold;
+      font-size: .8rem;
+      background: #BA17FF;
+      padding: 0.2rem 0;
+      border-radius: 1rem;
+      text-shadow: 0 0 5px #191414;
+      position: relative;
+      z-index: 9;
+    }
+    .content{
+      margin: 0.25rem;
+      margin-top: -.75rem;
+      background-color: #B270FF;
+      border-radius: 1.6rem;
+      padding: .75rem 1rem 1.5rem;
+      font-size: .65rem;
+      color: #FFF;
+      line-height: .9rem;
+      font-weight: 500;
+      position: relative;
+      text-align: left;
+    }
+    .txt{
+      padding: 1.5rem 2rem .5rem 1rem;
+      li{
+        list-style: decimal;
+        span{
+          color:#FCE100;
+        }
+      }
+    }
+    .table{
+      text-align: center;
+      border-radius: .4rem;
+      overflow: hidden;
+      background-color: #FDDDF0;
+      color: #8F2CAB;
+      li{
+        padding: 0 .25rem;
+        span:nth-child(2), span:nth-child(3) {
+          text-align: right;
+          direction: rtl;
+          text-indent: 1.5rem;
+        }
+      }
+      li + li{
+        border-top: 1px solid #B270FF;
+      }
+      span + span{
+        display: block;
+        padding: .3rem 0;
+        border-left: 1px solid #B270FF;
+      }
+      .t{
+        background-color: #BA16FE;
+        color: #F6D6FF;
+        font-weight: bold;
+        span:nth-child(1) {
+          text-align: center;
+          text-indent: 0;
+        }
+        span:nth-child(2), span:nth-child(3) {
+          text-align: center;
+          text-indent: 0;
+        }
+      }
+    }
+  }
+  .topl, .bottoml, .leftl, .rightl, .tll, .trl, .bll, .brl{
+    position: absolute;
+    
+    span{
+      height: 1rem;
+      text-align: center;
+      line-height: .8rem;
+      i{
+        display: inline-block;
+        height: .5rem;
+        width: .5rem;
+        border-radius: 50%;
+      }
+      &.l1 i{
+        background: radial-gradient(circle, #FFFFFF 25%, #FFCE64 99%);
+      }
+      &.l0 i{
+        background: radial-gradient(circle, #FFFFFF 0%, #FE98FF 99%);
+      }
+    }
+  }
+  .topl{left: 1.4rem; right: 1.4rem; top: 0;}
+  .bottoml{left: 1.4rem; right: 1.4rem; bottom: 0;}
+  .leftl{left: 0; top: 1.6rem; bottom: 1.4rem;
+    span{margin-left: .25rem;}
+  }
+  .rightl{right: 0; top: 1.6rem; bottom: 1.4rem;
+    span{margin-right: .25rem;}}
+  .tll{
+    left: .7rem;
+    top: .2rem;
+  }
+  .trl{
+    right: .7rem;
+    top: .2rem;
+  }
+  .bll{
+    left: .7rem;
+    bottom: .5rem;
+  }
+  .brl{
+    right: .7rem;
+    bottom: .5rem;
+  }
+  .trl, .bll{
+    i {
+  box-shadow: 0 0 8px #FFF;
+    }
+  }
+  .gift.loading{
+    animation: loading .5s ease-in infinite;
+  }
+  .gift:nth-of-type(2) {
+    animation-delay: .05s;
+  }
+  .gift:nth-of-type(3) {
+    animation-delay: .1s;
+  }
+  .gift:nth-of-type(4) {
+    animation-delay: .15s;
+  }
+  .gift:nth-of-type(5) {
+    animation-delay: .2s;
+  }
+  .gift:nth-of-type(6) {
+    animation-delay: .25s;
+  }
+  .gift:nth-of-type(7) {
+    animation-delay: .3s;
+  }
+  .gift:nth-of-type(8) {
+    animation-delay: .35s;
+  }
+  .gift:nth-of-type(9) {
+    animation-delay: .4s;
+  }
+  .gift:nth-of-type(10) {
+    animation-delay: .45s;
+  }
+}
+@keyframes loading {
+  0% {
+    box-shadow: 0 0 1px #FFF inset, 0 0 30px #FFF inset;
+  }
+  50% {
+    box-shadow: none;
+  }
+  // 50% {
+  //   box-shadow: 0 0 1px #FFF inset, 0 0 10px #FFF inset;
+  // }
+  100% {
+    box-shadow: none;
+  }
+}
+@keyframes scaleout {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+  
+}
+.result-float{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  z-index: 99;
+  color: #FFF;
+  .con{
+    background: url(../../../images/activity/turnable/resultbg.png) no-repeat;
+    width: 10.8rem;
+    height: 9.6rem;
+    background-size: cover;
+    text-align: center;
+    animation: scaleout .3s ease-in;
+  }
+  img{
+    margin: 4rem 0 .5rem;
+    height: 3rem;
+  }
+  p{
+    margin: 0 0 .5rem;
+    font-size: .6rem;
+    font-weight: 500;
+  }
+  .na{
+    font-size: .8rem;
+    font-weight: bold;
+  }
+  button{
+    background: none;
+    border: none;
+    height: 1.8rem;
+    width: 6.5rem;
+    background: url(../../../images/activity/turnable/resultbtn.png) no-repeat;
+    background-size: cover;
+  }
+}
